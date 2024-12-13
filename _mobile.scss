@@ -1,0 +1,147 @@
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color:#E1FF8F;
+    background-image: url(img/star_8.png), url(img/star_9.png), url(img/star_10.png);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 37px 64px, calc(100% - 79px) calc(100% - 34px), 220px -80px ;
+
+    &__text {
+      max-width: 296px;
+      color: #202027;
+      font-size: 40px;
+      font-weight: 700;
+      padding-top: 147px;
+      text-align: center;
+    }
+
+    &__description {
+      max-width: 296px;
+      color: #202027;
+      font-size: 16px;
+      font-weight: 400;
+      padding-top: 24px;
+      text-align: center;
+    }
+
+    &__button {
+      padding-top: 36px;
+      padding-bottom: 182px;
+    }
+
+  }
+
+  .button {
+    width: 285px;
+    border: 0;
+    border-radius: 60px;
+    background: #202027;
+    height: 55px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+
+    &:hover {
+      display: none;
+    }
+  }
+
+  span {
+    color: #202027;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .game {
+    display: none;
+  }
+
+  .minicard-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .minigame {
+    padding-top: 48px;
+    background-color: #202027;
+    padding-bottom: 49px;
+    background-image: none;
+
+    &__text {
+      color: #FFFFFF;
+      font-size: 40px;
+      font-weight: 700;
+      padding-bottom: 48px;
+    }
+
+    &__button {
+      width: 285px;
+      height: 55px;
+      padding-top: 32px;
+      color: #FFF;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    &-card {
+      max-width: 343px;
+      background-color: #FFFFFF;
+      border-radius: 47px;
+      display: flex;
+      flex-direction: column;
+      height: fit-content;
+
+      &__info {
+        display: flex;
+        flex-direction: column;
+        padding: 29px 29px 32px;
+      }
+
+      &__text {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      &__name {
+        font-size: 32px;
+        font-weight: 700;
+        text-align: left;
+        color: #202027;
+        line-height: 39px;
+
+      }
+
+      &__description {
+        font-size: 16px;
+        font-weight: 400;
+        text-align: left;
+        color: #202027;
+        line-height: 19px;
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: rgb(189, 237, 53);
+  }
+
+  .footer__text {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+  }
+}
