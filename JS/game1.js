@@ -7,7 +7,7 @@ function game1 (){
 
     if (!isNaN(trueNum) && userInput != null) {
         do {
-            /** trueNum is null значит пользователь ничего не ввел */
+            /** trueNum is null значит пользователь ничего не ввел в поле*/
             if (trueNum !== null) {
                 console.log(trueNum)
 
