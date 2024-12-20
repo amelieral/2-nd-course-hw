@@ -1,0 +1,238 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+input, button, select {
+    font-family: inherit;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+
+}
+
+.header {
+    background-color:#E1FF8F;
+    background-image: url(img/star_2.png), url(img/star_1.png), url(img/star_3.png);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), 100% 0;
+
+    &__text {
+        max-width: 769px;
+        color: #202027;
+        font-size: 64px;
+        font-weight: 700;
+        padding-top: 196px;
+    }
+
+    &__description {
+        max-width: 720px;
+        color: #202027;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        padding-top: 24px;
+    }
+
+    &__button {
+        padding-top: 48px;
+        padding-bottom: 246px;
+    }
+}
+
+span {
+    color: #202027;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+button {
+    width: 247px;
+    border: 0;
+    border-radius: 60px;
+    background: #202027;
+    height: 66px;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 600;
+    transition: all 500ms ease;
+}
+
+button:hover {
+    background:white;
+    cursor: pointer;
+    color: #202027;
+    border: 2px solid #202027;
+}
+
+.game {
+    padding-top: 94px;
+    background-color: #202027;
+    background-image: url(img/star_5.png), url(img/star_4.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 25px 770px, 100% 77px;
+
+    &__text {
+        max-width: 314px;
+        color: #FFFFFF;
+        font-size: 64px;
+        font-weight: 700;
+    }
+
+    &__description {
+        max-width: 700px;
+        color: #FFFFFF;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        padding-top: 24px;
+        padding-bottom: 72px;
+    }
+}
+
+.card-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.game-card {
+    max-width: 378px;
+    height: fit-content;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s;
+
+    &__info {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 16px;
+        padding: 32px 32px 36px 32px;
+    }
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    &__number {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 17px;
+        color: #202027;
+        text-align: left;
+        background-color: #F7F7F7;
+        border-radius: 52px;
+        padding: 8px 16px 10px;
+    }
+
+    &__name {
+        font-size: 32px;
+        font-weight: 700;
+        max-width: 304px;
+        line-height: 39.01px;
+        color: #202027;
+        text-align: left;
+    }
+}
+
+.minicard-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.minigame {
+    padding-top: 96px;
+    background-color: #202027;
+    padding-bottom: 144px;
+    background-image: url(img/star_6.png), url(img/star_7.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: calc(100% - 45px) calc(100% - 3299px), calc(100% - 52px) calc(100% - 45px);
+
+    &__text {
+        color: #FFFFFF;
+        font-size: 64px;
+        font-weight: 700;
+        padding-bottom: 72px;
+    }
+
+    &__button {
+        padding-top: 36px;
+    }
+
+    &-card {
+        max-width: 1200px;
+        height: 500px;
+        background-color: #FFFFFF;
+        border-radius: 47px;
+        display: flex;
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+            padding: 48px 48px 203px;
+        }
+
+        &__text {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        &__name {
+            font-size: 48px;
+            font-weight: 700;
+            text-align: left;
+            color: #202027;
+        }
+
+        &__description {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            text-align: left;
+            color: #202027;
+        }
+
+        &_reverse {
+            flex-direction: row-reverse;
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background-color: rgb(189, 237, 53);
+
+    &__text {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+        color: #000000;
+    }
+}
+
+@import '_mobile';
