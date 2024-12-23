@@ -1,6 +1,6 @@
 let correctAnswer;
 
-function game2 () {
+function generatePuzzle () {
     const num1 = Math.floor(Math.random() * 10) + 1;
     const num2 = Math.floor(Math.random() * 10) + 1;
     const operations = ['+', '-', '*', '/'];
@@ -16,22 +16,24 @@ function game2 () {
         correctAnswer = num1 * num2;
         return `Сколько будет ${num1} * ${num2}?`;
     } else {
-        correctAnswer = (num1 / num2);
-        return `Сколько будет ${num1} / ${num2}?`;
+        correctAnswer = (num1 / num2).toFixed(2);
+        return `Сколько будет ${num1} / ${num2}? Результат округлите до сотых`;
     }
 }
 
-while (true) {
-    const question = game2();
-    const userAnswer = prompt(question);
+function game2() {
+    while (true) {
+        const question = generatePuzzle();
+        const userAnswer = prompt(question);
 
-    if (userAnswer === null) {
-        break;
-    }
+        if (userAnswer === null) {
+            break;
+        }
 
-    if (Number(userAnswer) === Number(correctAnswer)) {
-        alert('Правильно! Ты такой молодец!');
-    } else {
-        alert(`Увы, неправильно. Правильный ответ: ${correctAnswer}`);
+        if (Number(userAnswer) === Number(correctAnswer)) {
+            alert('Правильно! Ты такой молодец!');
+        } else {
+            alert(`Увы, неправильно. Правильный ответ: ${correctAnswer}`);
+        }
     }
 }
