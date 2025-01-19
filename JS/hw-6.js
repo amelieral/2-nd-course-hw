@@ -2,8 +2,8 @@
 
 const numbers = [1, 5, 4, 10, 0, 3];
 for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] === 10) break;
-    console.log(numbers[i]);
+	if (numbers[i] === 10) break;
+	console.log(numbers[i]);
 }
 
 /*Задание 2*/
@@ -22,10 +22,10 @@ console.log(joinedNumbs);
 const arrNumbs = []
 
 for (let i = 0; i < 3; i++) {
-    arrNumbs[i] = [];
-    for (let j = 0; j < 3; j++) {
-        arrNumbs[i][j] = 1;
-    }
+	arrNumbs[i] = [];
+	for (let j = 0; j < 3; j++) {
+		arrNumbs[i][j] = 1;
+	}
 }
 console.log(arrNumbs);
 
@@ -50,9 +50,9 @@ const arrSeven = [9, 8, 7, 6, 5];
 let puzzle = Number(prompt('Угадай число'));
 
 if (arrSeven.includes(puzzle)) {
-    console.log('Угадал');
+	console.log('Угадал');
 } else {
-    console.log('Не угадал');
+	console.log('Не угадал');
 }
 
 /*Задание 8*/
@@ -69,14 +69,14 @@ console.log(word);
 /*Задание 9*/
 
 const arrNine = [
-    [1, 2, 3],
-    [4, 5, 6]
+	[1, 2, 3],
+	[4, 5, 6]
 ];
 
 const newArrNine = [];
 
 for (let i = 0; i < arrNine.length; i++) {
-    newArrNine.push(...arrNine[i]);
+	newArrNine.push(...arrNine[i]);
 }
 console.log(newArrNine);
 
@@ -84,9 +84,9 @@ console.log(newArrNine);
 
 const arrTen = [1, 3, 2, 4, 6, 5, 7, 8, 9, 10];
 for (let i = 0; i < arrTen.length; i++) {
-    if (arrTen [i + 1]) {
-        console.log(arrTen[i] + arrTen [i + 1]);
-    }
+	if (arrTen [i + 1]) {
+		console.log(arrTen[i] + arrTen [i + 1]);
+	}
 }
 
 /*Задание 11*/
@@ -98,7 +98,7 @@ console.log(updateNums);
 /*Задание 12*/
 
 function  getLength (arrTwelve) {
-    return arrTwelve.map(item => item.length)
+	return arrTwelve.map(item => item.length)
 }
 
 console.log(getLength([random, words]));
@@ -106,7 +106,7 @@ console.log(getLength([random, words]));
 /*Задание 13*/
 
 function negativeNumbs (newArrThree) {
-    return newArrThree. filter(item => item < 0 );
+	return newArrThree. filter(item => item < 0 );
 }
 
 console.log(negativeNumbs([1, 5, -3, 6, -7, 9, -2]));
@@ -114,13 +114,13 @@ console.log(negativeNumbs([1, 5, -3, 6, -7, 9, -2]));
 /*Задание 14*/
 
 function randomNumb () {
-    return Math.floor(Math.random() * 10);
+	return Math.floor(Math.random() * 10);
 }
 
 const arrFour = [];
 
 for (let i = 0; i < 10; i++) {
-    arrFour.push(randomNumb());
+	arrFour.push(randomNumb());
 }
 
 console.log(arrFour);
@@ -128,9 +128,9 @@ console.log(arrFour);
 const evenArr = [];
 
 for (let i = 0; i < arrFour.length; i++) {
-    if (arrFour[i] % 2 === 0) {
-        evenArr.push(arrFour[i]);
-    }
+	if (arrFour[i] % 2 === 0) {
+		evenArr.push(arrFour[i]);
+	}
 }
 
 console.log(evenArr);
@@ -138,13 +138,13 @@ console.log(evenArr);
 /*Задание 15*/
 
 function averageNumb () {
-    return Math.floor(Math.random() * 10);
+	return Math.floor(Math.random() * 10);
 }
 
 const averageArr = [];
 
 for (let i = 0; i < 10; i++) {
-    averageArr.push(averageNumb());
+	averageArr.push(averageNumb());
 }
 
 console.log(averageArr);
