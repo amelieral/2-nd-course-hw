@@ -51,7 +51,7 @@ body {
 
     &__button {
         padding-top: 48px;
-        padding-bottom: 246px;
+        padding-bottom: 156px;
     }
 }
 
@@ -81,9 +81,35 @@ button:hover {
     border: 2px solid #202027;
 }
 
-.game {
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    background-color: #BCEC30;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 33px;
+
+}
+
+.marquee-content {
+    display: inline-block;
+    animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+.icon {
+    vertical-align: middle;
+    margin: 0 51px;}
+
+    .game {
     padding-top: 94px;
-    background-color: #202027;
+    background-color:#202027;
     background-image: url(img/star_5.png), url(img/star_4.png);
     background-repeat: no-repeat, no-repeat;
     background-position: 25px 770px, 100% 77px;
@@ -161,8 +187,8 @@ button:hover {
 }
 
 .minigame {
+    background-color:#202027;
     padding-top: 96px;
-    background-color: #202027;
     padding-bottom: 144px;
     background-image: url(img/star_6.png), url(img/star_7.png);
     background-repeat: no-repeat, no-repeat;
