@@ -19,6 +19,11 @@
                     <button class="button">Поехали!</button>
                 </a>
             </div>
+            <div class="marquee">
+                <div class="marquee-content">
+                    викторина <img src="img/star_line.png" alt="icon" class="icon"> угадай число <img src="img/star_line.png" alt="icon" class="icon"> переверни текст <img src="img/star_line.png" alt="icon" class="icon"> простая арифметика <img src="img/star_line.png" alt="icon" class="icon"> камень, ножницы, бумага <img src="img/star_line.png" alt="icon" class="icon"> генератор случайных цветов
+                </div>
+            </div>
         </header>
     </section>
     <article id="about_games">
@@ -145,7 +150,24 @@
                         <p class="minigame-card__description">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
                     </div>
                     <div class="minigame__button">
-                        <button class="button">Играть!</button>
+                        <button class="button button_game">Играть!</button>
+
+                        <script>
+
+                            function getRandomColor() {
+                                return '#' + Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0');
+                            }
+
+                            function changeTextColor() {
+                                const minigameEl = document.querySelector('.minigame');
+                                minigameEl.style.background = getRandomColor()
+                            }
+
+                            const button_gameEl = document.querySelector('.button_game');
+                            button_gameEl.addEventListener('click', changeTextColor);
+
+                        </script>
+
                     </div>
                 </div>
             </article>
@@ -160,5 +182,6 @@
     <script src="JS/game3.js"></script>
     <script src="JS/game4.js"></script>
     <script src="JS/game5.js"></script>
+
 </body>
 </html>
