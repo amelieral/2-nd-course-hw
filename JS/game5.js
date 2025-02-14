@@ -21,14 +21,14 @@ function game5() {
     }
     
     while (true) {
-        let userInput = prompt('Выберите: камень, ножницы или бумага').toLowerCase();
+        let userInput = prompt('Выберите: камень, ножницы или бумага');
 
         if (userInput === null) {
             alert('Игра завершена.');
             break; // Выход из игры
         }
 
-        if (!choices.includes(userInput)) {
+        if (!choices.includes(userInput.toLowerCase())) {
             alert('Неверный ввод! Пожалуйста, выберите камень, ножницы или бумагу.');
             continue;
         }
